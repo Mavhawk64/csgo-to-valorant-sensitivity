@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CS:GO to Valorant Sensitivity Calculator</title>
+    <script type="text/javascript">
+      function calculate() {
+        let csgo = document.getElementById('sens').value;
+        document.getElementById('valorant').innerHTML = csgo * 99 / 315;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Convert Your Sensitivity From CS:GO to Valorant!</h1>
+    <h3>CS:GO Sensitivity</h3>
+    <input type="number" name="" id="sens" value="1.50"></input>
+    <button type="button" name="button" onclick="calculate()">Calculate!</button>
+    <h4 id="valorant"></h4>
+  </body>
+</html>
